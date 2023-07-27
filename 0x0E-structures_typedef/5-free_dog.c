@@ -1,15 +1,13 @@
+#include <stdlib.h>
 #include "dog.h"
 
 /**
- * free_dog - a function that frees a memory block of type dog_t
- * @d: address to the memory block to be freed
- *
- * Return: void
+ * free_dog - frees memory allocated for a struct dog
+ * @d: struct dog to free
  */
-
 void free_dog(dog_t *d)
 {
-	if (d != NULL)
+	if (d)
 	{
 		free(d->name);
 		free(d->owner);
