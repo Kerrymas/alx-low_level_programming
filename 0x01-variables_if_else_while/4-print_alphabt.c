@@ -1,18 +1,23 @@
 #include <stdio.h>
+
 /**
- * main - print if the number is positive, zero, or negative
- * Return: 0
- */
+* main - Entry point
+*
+* Return: returns 0 when everything works fine
+*
+*/
+
 int main(void)
 {
-char ch;
-for (ch = 'a' ; ch <= 'z' ; ch++)
-{
-if (ch != 'e' && ch != 'q')
-{
-	putchar(ch);
-}
-}
-putchar('\n');
-return (0);
+	int n;
+
+	for (n = 97; n <= 122; ++n)
+	{
+		if (n != 101 && n != 113)
+		{
+			putchar(n);
+		}
+	}
+	putchar(10);
+	return (0);
 }

@@ -2,23 +2,18 @@
 #define MAIN_H
 
 /**
- * File: main.h
+* void prototypes()
+* int prototypes()
+*/
 
- * description: Header file containing prototypes for all functions
- *       used in the 0x06-pointers_arrays_strings directory.
- */
-
-#include <stddef.h>
-
-int _putchar(char c);
-void *_memset(void *s, int c, size_t n);
-char *_memcpy(char *dest, char *src, unsigned int n);
-char *_strchr(char *s, char c);
-unsigned int _strspn(char *s, char *accept);
-char *_strpbrk(char *s, char *accept);
-char *_strstr(char *haystack, char *needle);
+char *_memset(char *, char, unsigned int);
+char *_memcpy(char *, char *, unsigned int);
+char *_strchr(char *, char);
+unsigned int _strspn(char *, char *);
+char *_strpbrk(char *, char *);
+char *_strstr(char *, char *);
 void print_chessboard(char (*a)[8]);
-void print_diagsums(int *a, int size);
+void print_diagsums(int *, int);
 void set_string(char **s, char *to);
 
-#endif
+#endif /*MAIN_H*/
